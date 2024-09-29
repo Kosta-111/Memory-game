@@ -9,12 +9,28 @@
 </head>
 
 <body>
-    <h1>Memory game</h1>
-    <h2>Coming soon...</h2>
+  <main>
+    <section class="play-field"></section>
+
+    <form>
+      <label>Size:</label>
+      <select name="field-size">
+        <option value="1" selected>2 x 4</option>
+        <option value="2">3 x 4</option>
+        <option value="3">4 x 4</option>
+      </select>
+      <input type="text" name="player" placeholder="Player name">
+      <label>Attempts:</label>
+      <input type="text" name="attempts" readonly value="0">
+      <button type="submit">Run</button>
+    </form>
+    
+    <p></p>
+  </main>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="./main.js"></script>
+    <script type="module" src="./script/main.js"></script>
 </body>
 
 </html>
